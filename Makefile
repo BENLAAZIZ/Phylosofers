@@ -1,12 +1,28 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/05/22 23:17:48 by hben-laz          #+#    #+#              #
-#    Updated: 2024/05/22 23:17:49 by hben-laz         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
+NAME = philo
 
+CC = cc
+
+CFLAGS = -Wall -Wextra -Werror 
+
+RM = rm -f
+
+SRC =  philo.c 
+
+OBJ = $(SRC:.c=.o)
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) -I. $(CFLAGS) $(OBJ) -o $(NAME)
+
+%.o: %.c philo.h
+		 $(CC) -I. $(CFLAGS) -c $< -o $@
+
+
+clean:
+		$(RM) $(OBJ) 
+
+fclean: clean
+		$(RM) $(NAME)
+ 
+re: fclean all
