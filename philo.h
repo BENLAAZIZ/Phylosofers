@@ -20,4 +20,8 @@ typedef struct s_table
 	long	start_sum;
 }			t_table;
 
+
+
+void	check_pars(t_table *tab, char **argv);
+
 #endif

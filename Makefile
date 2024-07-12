@@ -6,7 +6,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 RM = rm -f
 
-SRC =  philo.c 
+SRC =  philo.c parse.c
 
 OBJ = $(SRC:.c=.o)
 
