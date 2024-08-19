@@ -6,54 +6,76 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 00:58:32 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/07/12 00:58:49 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/19 20:50:07 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-void	check_sin(const char *str, int *i, int *s)
+int	check_sin(const char *str, int *i)
 {
 	if (str[*i] == '+' || str[*i] == '-')
 	{
 		if (str[*i] == '-')
-			*s *= -1;
-		(*i)++;
+			return (-1);
+		if (str[*i] == '+')
+			(*i)++;
 	}
+	return (0);
 }
 
-long	ft_atoi(const char *str)
+int ft_isdigit(char *str)
 {
-	int				i;
-	unsigned long	f;
-	int				s;
+	int i;
+
+	if (!str)
+		return (0);
+	i = 0;
+	while (str[i])
+	{
+		if ((str[i] >= 0 && str[i] <= 9))
+			i++;
+		else
+			return (-1);
+		if (str[i] == '\0')
+			break ;
+	}
+	return (0);
+}
+
+int	ft_atoi(const char *str)
+{
+	int		i;
+	int		f;
+	char	**array;
 
 	i = 0;
 	f = 0;
-	s = 1;
-
-	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
-		i++;
-	check_sin(str, &i, &s);
-	while (str[i] >= '0' && str[i] <= '9')
+	array = ft_splith(str, ' ');
+	if (!array)
+		return (-1);
+	if (array[1])
+		return(free_split(array), -1);
+	if (check_sin(array[0], &i) == -1)
+		return (-1);
+	if (ft_isdigit(array[0] + i) == -1)
+		return (free_split(array), -1);
+	while (array[0][i] >= '0' && array[0][i] <= '9')
 	{	
-		f = (f * 10) + str[i] - '0';
-		if (f >= 9223372036854775807 && s == 1)
-			return (-1);
-		if (f > 9223372036854775808UL && s == -1)
+		f = (f * 10) + array[0][i] - '0';
+		if (f > 2147483647)
 			return (-1);
 		i++;
 	}
-	if (f > 2147483647)
-		return (-1);
-	return ((long)f * s);
+	return (free_split(array), f);
 }
 
 void	check_pars(t_table *tab, char **argv)
 {
 	tab->philo_n = ft_atoi(argv[1]);
+	printf("{%d}\n", tab->philo_n);
 	if (tab->philo_n <= 0)
-		printf("error pars n_philo\n");
+		printf("error pars n_philo \n");
 	tab->time_to_die = ft_atoi(argv[2]) * 1000;
 	if (tab->time_to_die <= 0 || (tab->time_to_die < 6000))
 		printf("error pars time_to_die\n");
