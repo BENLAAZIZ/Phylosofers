@@ -6,15 +6,23 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 23:55:29 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/07/12 00:58:09 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/20 10:46:17 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
+void v()
+{
+	system("leaks philo");
+}
+
 int main(int argc, char **argv)
 {
 	t_table	tab;
 	(void)(argc);
-	check_pars(&tab, argv);
+	atexit(v);
+	if (check_pars(&tab, argv) == 1)
+		return (1);
+	return (0);
 }

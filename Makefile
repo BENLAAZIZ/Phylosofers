@@ -6,17 +6,17 @@ CFLAGS = -Wall -Wextra -Werror
 
 RM = rm -f
 
-SRC =  philo.c parse.c split.c outils.c
+SRC =  philo.c parse.c strtim.c 
 
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) -I. $(CFLAGS) $(OBJ) -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
 %.o: %.c philo.h
-		 $(CC) -I. $(CFLAGS) -c $< -o $@
+		 $(CC) $(CFLAGS) -c $< -o $@
 
 
 clean:
