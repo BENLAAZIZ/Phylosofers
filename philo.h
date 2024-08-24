@@ -20,6 +20,11 @@ typedef struct s_table
 	int	start_sum;
 }			t_table;
 
+typedef struct s_phelo
+{
+	int	id_philo;
+}			t_phelo;
+
 
 
 int		check_pars(t_table *tab, char **argv);

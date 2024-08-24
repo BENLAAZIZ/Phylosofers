@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 00:58:32 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/20 10:47:25 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/24 18:46:07 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,23 +72,21 @@ int	check_pars(t_table *tab, char **argv)
 {
 	tab->philo_n = ft_atoi(argv[1]);
 	if (tab->philo_n <= 0)
-		return (write(2, "error pars n_philo\n", 19), 1);
+		return (write(2, "Invalid argument\n", 17), 1);
 	tab->time_to_die = ft_atoi(argv[2]) * 1000;
 	if (tab->time_to_die <= 0 || (tab->time_to_die < 6000))
-		return (write(2, "error pars time_to_die\n", 23), 1);
+		return (write(2, "Invalid argument\n", 17), 1);
 	tab->time_to_eat = ft_atoi(argv[3]) * 1000;
 	if (tab->time_to_eat <= 0 || (tab->time_to_eat < 6000))
-		return (write(2, "error pars time_to_eat\n", 23), 1);
+		return (write(2, "Invalid argument\n", 17), 1);
 	tab->time_to_sleep = ft_atoi(argv[4]) * 1000;
 	if (tab->time_to_sleep <= 0 || (tab->time_to_sleep < 6000))
-		return (write(2, "error pars time_to_sleep\n", 25), 1);
+		return (write(2, "Invalid argument\n", 17), 1);
 	if (argv[5])
 	{
 		tab->number_limit_meals = ft_atoi(argv[5]);
-		if (tab->number_limit_meals <= 0)
-			return (write(2, "number of meals\n", 16), 1);
+		if (tab->number_limit_meals < 0)
+			return (write(2, " Invalid number of meals\n", 25), 1);
 	}
-	else
-		tab->number_limit_meals = -1;
 	return (0);
 }
