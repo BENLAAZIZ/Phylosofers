@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 00:58:32 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/25 20:01:03 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/26 16:17:18 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,13 +74,13 @@ int	check_pars(t_data *data, char **argv)
 	if (data->philo_n <= 0)
 		return (write(2, "Invalid argument\n", 17), 1);
 	data->time_to_die = ft_atoi(argv[2]) * 1000;
-	if (data->time_to_die <= 0 || (data->time_to_die < 6000))
+	if (data->time_to_die <= 0)
 		return (write(2, "Invalid argument\n", 17), 1);
 	data->time_to_eat = ft_atoi(argv[3]) * 1000;
-	if (data->time_to_eat <= 0 || (data->time_to_eat < 6000))
+	if (data->time_to_eat <= 0)
 		return (write(2, "Invalid argument\n", 17), 1);
 	data->time_to_sleep = ft_atoi(argv[4]) * 1000;
-	if (data->time_to_sleep <= 0 || (data->time_to_sleep < 6000))
+	if (data->time_to_sleep <= 0)
 		return (write(2, "Invalid argument\n", 17), 1);
 	if (argv[5])
 	{
@@ -90,5 +90,8 @@ int	check_pars(t_data *data, char **argv)
 	}
 	else
 		data->number_limit_meals = -1;
+	data->full_data = 0;
+	data->is_died = 0;
+	data->start_sim = current_time();
 	return (0);
 }

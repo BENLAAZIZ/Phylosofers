@@ -31,8 +31,8 @@ typedef struct s_data
 	int				number_limit_meals;
 	int				is_died;
 	int				full_data;
-	size_t			start;
-	pthread_mutex_t	print_M;
+	size_t			start_sim;
+	pthread_mutex_t	print_mutix;
 	pthread_mutex_t	dead_M;
 	pthread_mutex_t	data_mutex;
 	pthread_mutex_t	eat_M;
@@ -43,5 +43,24 @@ typedef struct s_data
 int		check_pars(t_data *data, char **argv);
 char	*ft_strtrim(char const *s1, char const *set);
 size_t	current_time();
+void	*routine(void *philo_data);
+void	*one_thread(void *philo_data);
+void	ft_usleep(int time, t_data *data);
+void	ft_eat(t_philo *philo);
+void	ft_sleep(t_philo *philo);
+void	ft_think(t_philo *philo);
+void	initializ_philo(t_data *data);
+int		ft_init_mutex(t_data *data);
+int		start_sim_simulation(t_data *data);
+int		creat_thread(t_data *data);
+int		is_philo_died(t_philo *philo);
+int		philo_full(t_data *data);
+void	monitor(t_data *data);
+int		get_var(pthread_mutex_t *mutex, int *var);
+int		set_var(pthread_mutex_t *mutex, int *var, int value);
+void	free_data(t_data *data);
+int		end_simulation(t_data *data);
+
+
 
 #endif
