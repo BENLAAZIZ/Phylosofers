@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 11:33:54 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/27 18:49:31 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/27 18:54:28 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ void	*routine(void *philo_data)
 	return (NULL);
 }
 
-
 void	*one_thread(void *philo_data)
 {
 	t_philo	*philo;
@@ -42,7 +41,6 @@ void	*one_thread(void *philo_data)
 	ft_printf(philo, "has taken a fork\n");
 	ft_usleep(philo->data->time_to_die, philo->data);
 	ft_printf(philo, "died\n");
-	
 	return (NULL);
 }
 

@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 12:28:33 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/27 18:49:07 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/27 19:04:11 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,21 +93,46 @@ int	end_simulation(t_data *data) // destroy mutex
 	return (0);
 }
 
+// void	monitor(t_data *data)
+// {
+// 	int	i;
+	
+// 	while (1)
+// 	{
+// 		i = -1;
+// 		while (++i < data->philo_n)
+// 		{
+// 			// usleep(200)
+// 			if (is_philo_died(&data->philo[i]))
+// 			{
+// 				// printf("hhadadadaddad\nhhadadadaddad\nhhadadadaddad\nhhadadadaddad\nhhadadadaddad\nhhadadadaddad\n");
+// 				set_var(&data->data_mutex, &data->is_died, 1);
+// 				pthread_mutex_lock(&data->print_mutix);
+// 				if (get_var(&data->data_mutex, &data->is_died))
+// 					printf("%ld	%d	died\n", current_time()
+// 						- data->start_time, data->philo[i].philo_id);
+// 				pthread_mutex_unlock(&data->print_mutix);
+// 				return ;
+// 			}
+// 		}
+// 		if (get_var(&data->data_mutex, &data->is_died))
+// 			break ;
+// 		if (philo_full(data))
+// 			break ;
+// 	}
+// }
+
+
 void	monitor(t_data *data)
 {
 	int	i;
-
-	// printf("hhadadadaddad\nhhadadadaddad\n\n%d\n\nhhadadadaddad\nhhadadadaddad\nhhadadadaddad\nhhadadadaddad\n", get_var(&data->data_mutex, &data->is_died));
 	
+	i = 0;
 	while (1)
 	{
-		i = -1;
-		while (++i < data->philo_n)
-		{
-			// usleep(200)
+	// usleep(200)
 			if (is_philo_died(&data->philo[i]))
 			{
-				// printf("hhadadadaddad\nhhadadadaddad\nhhadadadaddad\nhhadadadaddad\nhhadadadaddad\nhhadadadaddad\n");
 				set_var(&data->data_mutex, &data->is_died, 1);
 				pthread_mutex_lock(&data->print_mutix);
 				if (get_var(&data->data_mutex, &data->is_died))
@@ -116,12 +141,12 @@ void	monitor(t_data *data)
 				pthread_mutex_unlock(&data->print_mutix);
 				return ;
 			}
-		}
+		i++;
+		if (i == data->philo_n)
+			i = 0;
 		if (get_var(&data->data_mutex, &data->is_died))
 			break ;
 		if (philo_full(data))
 			break ;
 	}
 }
-
-
