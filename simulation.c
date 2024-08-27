@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 12:28:33 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/27 19:04:11 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/27 19:12:10 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -130,17 +130,16 @@ void	monitor(t_data *data)
 	i = 0;
 	while (1)
 	{
-	// usleep(200)
-			if (is_philo_died(&data->philo[i]))
-			{
-				set_var(&data->data_mutex, &data->is_died, 1);
-				pthread_mutex_lock(&data->print_mutix);
-				if (get_var(&data->data_mutex, &data->is_died))
-					printf("%ld	%d	died\n", current_time()
-						- data->start_time, data->philo[i].philo_id);
-				pthread_mutex_unlock(&data->print_mutix);
-				return ;
-			}
+		if (is_philo_died(&data->philo[i]))
+		{
+			set_var(&data->data_mutex, &data->is_died, 1);
+			pthread_mutex_lock(&data->print_mutix);
+			if (get_var(&data->data_mutex, &data->is_died))
+				printf("%ld	%d	died\n", current_time()
+					- data->start_time, data->philo[i].philo_id);
+			pthread_mutex_unlock(&data->print_mutix);
+			return ;
+		}
 		i++;
 		if (i == data->philo_n)
 			i = 0;
