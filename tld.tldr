@@ -67,7 +67,7 @@
 				"tldraw:font": "draw",
 				"tldraw:textAlign": "end",
 				"tldraw:spline": "line",
-				"tldraw:arrowheadstart_sim": "arrow",
+				"tldraw:arrowheadstart_time": "arrow",
 				"tldraw:arrowheadEnd": "none"
 			},
 			"brush": null,
@@ -146,7 +146,7 @@
 					"y": 0.6360070731244903,
 					"z": 1
 				},
-				"terminal": "start_sim"
+				"terminal": "start_time"
 			},
 			"typeName": "binding"
 		},
@@ -164,7 +164,7 @@
 					"y": 0.6719037001280884,
 					"z": 1
 				},
-				"terminal": "start_sim"
+				"terminal": "start_time"
 			},
 			"typeName": "binding"
 		},
@@ -182,7 +182,7 @@
 					"y": 0.23057213935638976,
 					"z": 1
 				},
-				"terminal": "start_sim"
+				"terminal": "start_time"
 			},
 			"typeName": "binding"
 		},
@@ -236,7 +236,7 @@
 					"y": 0.22923751150875843,
 					"z": 1
 				},
-				"terminal": "start_sim"
+				"terminal": "start_time"
 			},
 			"typeName": "binding"
 		},
@@ -254,7 +254,7 @@
 					"y": 0.2248852276423592,
 					"z": 1
 				},
-				"terminal": "start_sim"
+				"terminal": "start_time"
 			},
 			"typeName": "binding"
 		},
@@ -290,7 +290,7 @@
 					"y": 0.23057213935638976,
 					"z": 1
 				},
-				"terminal": "start_sim"
+				"terminal": "start_time"
 			},
 			"typeName": "binding"
 		},
@@ -344,7 +344,7 @@
 					"y": 0.011001618729959023,
 					"z": 1
 				},
-				"terminal": "start_sim"
+				"terminal": "start_time"
 			},
 			"typeName": "binding"
 		},
@@ -469,7 +469,7 @@
 					"x": 0.7633418045738307,
 					"y": 0.9788551937730823
 				},
-				"terminal": "start_sim"
+				"terminal": "start_time"
 			},
 			"typeName": "binding"
 		},
@@ -518,7 +518,7 @@
 				"w": 276.3526306152344,
 				"text": "Multitheading Models",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 6.005742355027117
 			},
@@ -541,7 +541,7 @@
 				"w": 165.404296875,
 				"text": "User Threads",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 6.005742355027117
 			},
@@ -564,7 +564,7 @@
 				"w": 191.63584899902344,
 				"text": "Kernel Threads",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 6.005742355027117
 			},
@@ -588,7 +588,7 @@
 				"color": "violet",
 				"labelColor": "black",
 				"bend": 143.43870264971432,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -596,7 +596,7 @@
 					"x": -906.6610422691706,
 					"y": 584.9831868563521
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -623,7 +623,7 @@
 				"color": "violet",
 				"labelColor": "black",
 				"bend": -156.1165708581615,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -631,7 +631,7 @@
 					"x": 868.2130102692031,
 					"y": 604.3375383523141
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -717,7 +717,7 @@
 				"w": 161.546875,
 				"text": "supported above \nthe kernel and \nmanaged kernel \nsupport .",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 6.005742355027117
 			},
@@ -740,7 +740,7 @@
 				"w": 170.8133544921875,
 				"text": "supported and \nmanaged directly \nbythe OS .",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 6.005742355027117
 			},
@@ -763,7 +763,7 @@
 				"w": 377.5787658691406,
 				"text": "there must exist a relationship between",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.005529408069712
 			},
@@ -786,7 +786,7 @@
 				"w": 165.404296875,
 				"text": "User Threads",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.005529408069712
 			},
@@ -809,7 +809,7 @@
 				"w": 36.8778190612793,
 				"text": "and",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.005529408069712
 			},
@@ -832,7 +832,7 @@
 				"w": 159.72028453769516,
 				"text": "Kernel Threads",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.005529408069712
 			},
@@ -855,7 +855,7 @@
 				"w": 572.4463500976562,
 				"text": "there are 3 common ways of estabilishing this retlationship :",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 4.927406158860309
 			},
@@ -908,7 +908,7 @@
 				"w": 217.5093231201172,
 				"text": "1.   Many-to-one Model",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -4367,7 +4367,7 @@
 				"w": 16,
 				"text": "K",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -4390,7 +4390,7 @@
 				"w": 112.80012512207031,
 				"text": "User thread",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -4413,7 +4413,7 @@
 				"w": 112.80012512207031,
 				"text": "User thread",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -4437,7 +4437,7 @@
 				"color": "green",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": -375.564420061017,
 					"y": 9.131635285616579
 				},
@@ -4445,7 +4445,7 @@
 					"x": -595.9854480420744,
 					"y": 6.716304243305281
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -4472,7 +4472,7 @@
 				"color": "green",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": -381.9597221590984,
 					"y": 6.241437844963248
 				},
@@ -4480,7 +4480,7 @@
 					"x": -595.9854480420744,
 					"y": 6.716304243305281
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -4506,7 +4506,7 @@
 				"w": 303.2569274902344,
 				"text": ".  Maps many user-level threads\n      to one kernel thread.",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -4529,7 +4529,7 @@
 				"w": 422.3270263671875,
 				"text": ". Thread management is done by the thread \n     library in user space, so it is efficient .",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -4552,7 +4552,7 @@
 				"w": 553.8536987304688,
 				"text": ". The entire process will block if a thread makes\n      a bloking system call .\n\n. Because only one thread can access the kernel at a time, \n      multiple threads are unable to run in parallel on \n       multiprocessors.",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -4673,7 +4673,7 @@
 				"w": 204.33116149902344,
 				"text": "2.   one-to-one Model",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -4760,7 +4760,7 @@
 				"w": 16,
 				"text": "K",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -7277,7 +7277,7 @@
 				"w": 16,
 				"text": "K",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -7364,7 +7364,7 @@
 				"w": 16,
 				"text": "K",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -7418,7 +7418,7 @@
 				"color": "green",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": -381.9597221590984,
 					"y": 6.241437844963248
 				},
@@ -7426,7 +7426,7 @@
 					"x": -595.9854480420744,
 					"y": 6.716304243305281
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -7453,7 +7453,7 @@
 				"color": "green",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": -375.564420061017,
 					"y": 9.131635285616579
 				},
@@ -7461,7 +7461,7 @@
 					"x": -595.9854480420744,
 					"y": 6.716304243305281
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -7487,7 +7487,7 @@
 				"w": 59.127166748046875,
 				"text": "User \n tread",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -7510,7 +7510,7 @@
 				"w": 65.38801574707031,
 				"text": "User \nthread",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -7533,7 +7533,7 @@
 				"w": 402.85003662109375,
 				"text": ".  Maps each user thread to kernel thread.",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -7556,7 +7556,7 @@
 				"w": 483.2753601074219,
 				"text": ". Provides more concurrency than the many-to-one \nmodel by allowing system call.\n\n. Also allows multiple threads to run in parallel on \n    multiproceddors",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -7579,7 +7579,7 @@
 				"w": 520.460693359375,
 				"text": ". creating a user thread requires creating\n the crresponding kernel thread.",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -7666,7 +7666,7 @@
 				"w": 240.20355224609375,
 				"text": "3.   Many-to-Many Model",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -10993,7 +10993,7 @@
 				"w": 16,
 				"text": "K",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -11310,7 +11310,7 @@
 				"w": 16,
 				"text": "K",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -11333,7 +11333,7 @@
 				"w": 16,
 				"text": "K",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -11357,7 +11357,7 @@
 				"color": "green",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": -375.564420061017,
 					"y": 9.131635285616579
 				},
@@ -11365,7 +11365,7 @@
 					"x": -595.9854480420744,
 					"y": 6.716304243305281
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -11391,7 +11391,7 @@
 				"w": 65.38801574707031,
 				"text": "User \nthread",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -11415,7 +11415,7 @@
 				"color": "green",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": -381.9597221590984,
 					"y": 6.241437844963248
 				},
@@ -11423,7 +11423,7 @@
 					"x": -595.9854480420744,
 					"y": 6.716304243305281
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -11449,7 +11449,7 @@
 				"w": 59.127166748046875,
 				"text": "User \n tread",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -11472,7 +11472,7 @@
 				"w": 399.1607971191406,
 				"text": ". Multiplexs many user-level threads to a \nsmaller or equal number of kernel thread.",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -11495,7 +11495,7 @@
 				"w": 537.5830688476562,
 				"text": ". The number of kernel thread may be specific \n to either a particular application or a particalr machine.\n\n. Developers can create as many user threads as\n  necessary, and the corresponding kernel threads \n  can run in parallel on a  multiprocessor.",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -11518,7 +11518,7 @@
 				"w": 462.8652038574219,
 				"text": "also, when a thread performs a blocking system \ncall, the kernel can schedule another thread for \nexecution",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 5.14734440650733
 			},
@@ -11572,7 +11572,7 @@
 				"color": "violet",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": -30.99795269071383,
 					"y": -34.042092926727804
 				},
@@ -11580,7 +11580,7 @@
 					"x": -3483.449932824299,
 					"y": 967.7522721344781
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -11607,7 +11607,7 @@
 				"color": "violet",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -11615,7 +11615,7 @@
 					"x": 48.17262778046824,
 					"y": 965.0994293507534
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -11642,7 +11642,7 @@
 				"color": "violet",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -11650,7 +11650,7 @@
 					"x": 4037.448268854186,
 					"y": 914.8041189236442
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -11676,7 +11676,7 @@
 				"w": 137.66448974609375,
 				"text": "fork()",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 3.4655107727879035
 			},
@@ -11759,7 +11759,7 @@
 				"w": 171.37217712402344,
 				"text": "process",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 3.4655107727879035
 			},
@@ -11782,7 +11782,7 @@
 				"w": 171.37217712402344,
 				"text": "process",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 3.4655107727879035
 			},
@@ -11805,7 +11805,7 @@
 				"w": 159.75650024414062,
 				"text": "pid = a",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 3.4655107727879035
 			},
@@ -11828,7 +11828,7 @@
 				"w": 156.7183074951172,
 				"text": "pid = b",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 3.4655107727879035
 			},
@@ -11851,7 +11851,7 @@
 				"w": 138.63563537597656,
 				"text": "code 1",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 3.4655107727879035
 			},
@@ -11874,7 +11874,7 @@
 				"w": 138.63563537597656,
 				"text": "code 1",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 3.4655107727879035
 			},
@@ -11966,7 +11966,7 @@
 				"color": "red",
 				"labelColor": "black",
 				"bend": -236.0024545091174,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -11974,7 +11974,7 @@
 					"x": 1361.9125253809802,
 					"y": -735.4434030607018
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -12000,7 +12000,7 @@
 				"w": 143.87109375,
 				"text": "exec()",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 3.4655107727879035
 			},
@@ -12057,7 +12057,7 @@
 				"w": 138.63563537597656,
 				"text": "code 1",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 3.4655107727879035
 			},
@@ -12080,7 +12080,7 @@
 				"w": 159.75650024414062,
 				"text": "pid = a",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 3.4655107727879035
 			},
@@ -12103,7 +12103,7 @@
 				"w": 171.37217712402344,
 				"text": "process",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 3.4655107727879035
 			},
@@ -12190,7 +12190,7 @@
 				"w": 150.86436462402344,
 				"text": "code 2",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 3.4655107727879035
 			},
@@ -12213,7 +12213,7 @@
 				"w": 159.75650024414062,
 				"text": "pid = a",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 3.4655107727879035
 			},
@@ -12236,7 +12236,7 @@
 				"w": 171.37217712402344,
 				"text": "process",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 3.4655107727879035
 			},
@@ -12290,7 +12290,7 @@
 				"color": "red",
 				"labelColor": "black",
 				"bend": -268.08491863190005,
-				"start_sim": {
+				"start_time": {
 					"x": 84.14984512329102,
 					"y": -53.697766588329614
 				},
@@ -12298,7 +12298,7 @@
 					"x": 1104.2554798372516,
 					"y": -730.3667597466343
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -12677,7 +12677,7 @@
 				"w": 132.43988037109375,
 				"text": "tread 1",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 2.48299558926471
 			},
@@ -12700,7 +12700,7 @@
 				"w": 142.44422912597656,
 				"text": "tread 2",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 2.48299558926471
 			},
@@ -12723,7 +12723,7 @@
 				"w": 142.44422912597656,
 				"text": "tread 3",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 2.48299558926471
 			},
@@ -12746,7 +12746,7 @@
 				"w": 143.5618438720703,
 				"text": "tread 4",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 2.48299558926471
 			},
@@ -12770,7 +12770,7 @@
 				"color": "black",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -12778,7 +12778,7 @@
 					"x": 2,
 					"y": 0
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -12805,7 +12805,7 @@
 				"color": "black",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -12813,7 +12813,7 @@
 					"x": 16.932433704479884,
 					"y": 224.41964992667863
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -12840,7 +12840,7 @@
 				"color": "black",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -12848,7 +12848,7 @@
 					"x": -716.0428955535164,
 					"y": 629.0773103452025
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -12875,7 +12875,7 @@
 				"color": "black",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -12883,7 +12883,7 @@
 					"x": 2,
 					"y": 0
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -12909,7 +12909,7 @@
 				"w": 132.43988037109375,
 				"text": "tread 1",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 1.3542839416968044
 			},
@@ -12962,7 +12962,7 @@
 				"w": 132.43988037109375,
 				"text": "tread 1",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 1.5223396442363106
 			},
@@ -13015,7 +13015,7 @@
 				"w": 142.44422912597656,
 				"text": "tread 3",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 1.6853654780276763
 			},
@@ -13158,7 +13158,7 @@
 				"w": 101.3689193725586,
 				"text": "tasck",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 1.4722192620897911
 			},
@@ -13181,7 +13181,7 @@
 				"w": 101.3689193725586,
 				"text": "tasck",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 1.4722192620897911
 			},
@@ -13204,7 +13204,7 @@
 				"w": 101.3689193725586,
 				"text": "tasck",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 1.4722192620897911
 			},
@@ -13227,7 +13227,7 @@
 				"w": 101.3689193725586,
 				"text": "tasck",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 1.4722192620897911
 			},
@@ -13250,7 +13250,7 @@
 				"w": 111.92121887207031,
 				"text": "result",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 1.5574083475470277
 			},
@@ -13273,7 +13273,7 @@
 				"w": 111.92121887207031,
 				"text": "result",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 1.5574083475470277
 			},
@@ -13296,7 +13296,7 @@
 				"w": 111.92121887207031,
 				"text": "result",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 1.5574083475470277
 			},
@@ -13319,7 +13319,7 @@
 				"w": 111.92121887207031,
 				"text": "result",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 1.5574083475470277
 			},
@@ -13342,7 +13342,7 @@
 				"w": 1080.573486328125,
 				"text": "the threads of a computer program allow the program \n      to execute sequential actions or many actions at once",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 2.48299558926471
 			},
@@ -13365,7 +13365,7 @@
 				"w": 111.92121887207031,
 				"text": "result",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 1.5574083475470277
 			},
@@ -13388,7 +13388,7 @@
 				"w": 111.92121887207031,
 				"text": "result",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 1.5574083475470277
 			},
@@ -13411,7 +13411,7 @@
 				"w": 101.3689193725586,
 				"text": "tasck",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 1.4722192620897911
 			},
@@ -13434,7 +13434,7 @@
 				"w": 101.3689193725586,
 				"text": "tasck",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 1.4722192620897911
 			},
@@ -13457,7 +13457,7 @@
 				"w": 97.44446452908777,
 				"text": "tread 4",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 1.6853654780276763
 			},
@@ -13480,7 +13480,7 @@
 				"w": 77.69241835416099,
 				"text": "tread 2",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 1.3542839416968044
 			},
@@ -13707,7 +13707,7 @@
 				"color": "black",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -13715,7 +13715,7 @@
 					"x": 16.932433704479884,
 					"y": 224.41964992667863
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -13742,7 +13742,7 @@
 				"color": "black",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -13750,7 +13750,7 @@
 					"x": 2,
 					"y": 0
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -13807,7 +13807,7 @@
 				"color": "black",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -13815,7 +13815,7 @@
 					"x": -173.8984995624524,
 					"y": -316.4634255126711
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -13842,7 +13842,7 @@
 				"color": "black",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -13850,7 +13850,7 @@
 					"x": -193.05472566561633,
 					"y": 450.0026382479089
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -13877,7 +13877,7 @@
 				"color": "black",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -13885,7 +13885,7 @@
 					"x": -322.88914652004564,
 					"y": 1053.8718939178277
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -14825,7 +14825,7 @@
 				"color": "black",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -14833,7 +14833,7 @@
 					"x": -331.95080836085685,
 					"y": -208.05870103679635
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -14860,7 +14860,7 @@
 				"color": "violet",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 73.02294628195152,
 					"y": -52.98253688498433
 				},
@@ -14868,7 +14868,7 @@
 					"x": 306.6048463060322,
 					"y": -426.1221442629605
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -14948,7 +14948,7 @@
 				"color": "black",
 				"labelColor": "black",
 				"bend": 31.989213455384494,
-				"start_sim": {
+				"start_time": {
 					"x": -86.76741268576077,
 					"y": 63.046967684811776
 				},
@@ -14956,7 +14956,7 @@
 					"x": -5.79044947579041,
 					"y": -405.2085625951295
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -15029,7 +15029,7 @@
 				"color": "violet",
 				"labelColor": "black",
 				"bend": -126.78364755683758,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -15037,7 +15037,7 @@
 					"x": 255.0695803761401,
 					"y": -336.54501545280885
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -17745,7 +17745,7 @@
 				"color": "light-green",
 				"labelColor": "black",
 				"bend": -268.1700117430884,
-				"start_sim": {
+				"start_time": {
 					"x": 256.16441610359664,
 					"y": -22.431710741022847
 				},
@@ -17753,7 +17753,7 @@
 					"x": 1433.8693019783518,
 					"y": 62.07314935422843
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -17947,7 +17947,7 @@
 				"color": "orange",
 				"labelColor": "black",
 				"bend": 585.6544156957854,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -17955,7 +17955,7 @@
 					"x": -1007.3339786294537,
 					"y": -102.89081687288126
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -17982,7 +17982,7 @@
 				"color": "orange",
 				"labelColor": "black",
 				"bend": 411.9478819196022,
-				"start_sim": {
+				"start_time": {
 					"x": 80.23355624485069,
 					"y": -3.1177221157981942
 				},
@@ -17990,7 +17990,7 @@
 					"x": 998.0095833383266,
 					"y": -153.94473021258455
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -18260,7 +18260,7 @@
 				"color": "orange",
 				"labelColor": "black",
 				"bend": 411.9478819196022,
-				"start_sim": {
+				"start_time": {
 					"x": 80.23355624485069,
 					"y": -3.1177221157981942
 				},
@@ -18268,7 +18268,7 @@
 					"x": 998.0095833383266,
 					"y": -153.94473021258455
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -18679,7 +18679,7 @@
 				"color": "orange",
 				"labelColor": "black",
 				"bend": 585.6544156957854,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -18687,7 +18687,7 @@
 					"x": -1007.3339786294537,
 					"y": -102.89081687288126
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -20838,7 +20838,7 @@
 				"color": "light-green",
 				"labelColor": "black",
 				"bend": -268.1700117430884,
-				"start_sim": {
+				"start_time": {
 					"x": 256.16441610359664,
 					"y": -22.431710741022847
 				},
@@ -20846,7 +20846,7 @@
 					"x": 1433.8693019783518,
 					"y": 62.07314935422843
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -21332,7 +21332,7 @@
 				"w": 2557.075933618681,
 				"text": "Concurrent Access: Multiple threads access the same memory location at the same time",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": false,
 				"scale": 1.23886364766239
 			},
@@ -27493,7 +27493,7 @@
 				"w": 2239.3379830798544,
 				"text": " sequential programming",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": true,
 				"scale": 2.894055175135982
 			},
@@ -28357,7 +28357,7 @@
 				"color": "blue",
 				"size": "xl",
 				"w": 332.8088073730469,
-				"text": "*start_sim_routine",
+				"text": "*start_time_routine",
 				"font": "draw",
 				"textAlign": "end",
 				"autoSize": true,
@@ -37938,7 +37938,7 @@
 				"color": "blue",
 				"size": "xl",
 				"w": 663.820068359375,
-				"text": "void *(*start_sim_routine)(void *)",
+				"text": "void *(*start_time_routine)(void *)",
 				"font": "draw",
 				"textAlign": "end",
 				"autoSize": true,
@@ -38222,7 +38222,7 @@
 				"w": 1746.6446565680285,
 				"text": "Description: This is a pointer to the function that the thread will execute. The function must match the signature void *function_name(void *arg).",
 				"font": "draw",
-				"textAlign": "start_sim",
+				"textAlign": "start_time",
 				"autoSize": false,
 				"scale": 2.5258140523229327
 			},
@@ -39577,7 +39577,7 @@
 				"color": "light-blue",
 				"size": "xl",
 				"w": 2189.3408203125,
-				"text": " When the thread start_sims, it will begin executing this function. This function must return a void *",
+				"text": " When the thread start_times, it will begin executing this function. This function must return a void *",
 				"font": "draw",
 				"textAlign": "end",
 				"autoSize": true,
@@ -40011,7 +40011,7 @@
 				"color": "yellow",
 				"size": "xl",
 				"w": 6265.573374088798,
-				"text": "This is a pointer to the argument that will be passed to the start_sim routine. \nIf your start_sim routine doesn't need any arguments, you can pass NULL.",
+				"text": "This is a pointer to the argument that will be passed to the start_time routine. \nIf your start_time routine doesn't need any arguments, you can pass NULL.",
 				"font": "draw",
 				"textAlign": "end",
 				"autoSize": true,
@@ -40146,7 +40146,7 @@
 				"color": "orange",
 				"size": "xl",
 				"w": 5347.539468181704,
-				"text": "This allows you to pass any data the thread function needs when it start_sims.                                                              \nThe arg can point to any type of data, which is why it’s a void *. The start_sim routine will cast it to the appropriate type",
+				"text": "This allows you to pass any data the thread function needs when it start_times.                                                              \nThe arg can point to any type of data, which is why it’s a void *. The start_time routine will cast it to the appropriate type",
 				"font": "draw",
 				"textAlign": "end",
 				"autoSize": true,
@@ -42029,7 +42029,7 @@
 				"color": "orange",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 17.5238037109375,
 					"y": -2.1683349609375
 				},
@@ -42037,7 +42037,7 @@
 					"x": 438.93768310546875,
 					"y": 7.2161865234375
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -44489,7 +44489,7 @@
 				"color": "orange",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": -14.892578125,
 					"y": -11.5557861328125
 				},
@@ -44497,7 +44497,7 @@
 					"x": 423.6651611328125,
 					"y": -19.395751953125
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -44524,7 +44524,7 @@
 				"color": "orange",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": -14.892578125,
 					"y": -11.5557861328125
 				},
@@ -44532,7 +44532,7 @@
 					"x": 423.6651611328125,
 					"y": -19.395751953125
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -44559,7 +44559,7 @@
 				"color": "violet",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": -14.892578125,
 					"y": -11.5557861328125
 				},
@@ -44567,7 +44567,7 @@
 					"x": 423.6651611328125,
 					"y": -19.395751953125
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -44594,7 +44594,7 @@
 				"color": "violet",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": -14.892578125,
 					"y": -11.5557861328125
 				},
@@ -44602,7 +44602,7 @@
 					"x": 423.6651611328125,
 					"y": -19.395751953125
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -44629,7 +44629,7 @@
 				"color": "orange",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": -14.892578125,
 					"y": -11.5557861328125
 				},
@@ -44637,7 +44637,7 @@
 					"x": 423.6651611328125,
 					"y": -19.395751953125
 				},
-				"arrowheadstart_sim": "none",
+				"arrowheadstart_time": "none",
 				"arrowheadEnd": "arrow",
 				"text": "",
 				"labelPosition": 0.5,
@@ -44737,7 +44737,7 @@
 				"color": "green",
 				"size": "xl",
 				"w": 2690.662818192994,
-				"text": "gettimeofday(  &start_sim  , NULL)",
+				"text": "gettimeofday(  &start_time  , NULL)",
 				"font": "draw",
 				"textAlign": "end",
 				"autoSize": true,
@@ -44763,7 +44763,7 @@
 				"color": "black",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 169.2516763137146,
 					"y": -74.02463276395429
 				},
@@ -44771,7 +44771,7 @@
 					"x": -1740.3375860050164,
 					"y": -100.3295651444314
 				},
-				"arrowheadstart_sim": "arrow",
+				"arrowheadstart_time": "arrow",
 				"arrowheadEnd": "none",
 				"text": "",
 				"labelPosition": 0.5,
@@ -44878,7 +44878,7 @@
 				"color": "light-violet",
 				"size": "xl",
 				"w": 739.2019178135888,
-				"text": "start_sim.tv_sec",
+				"text": "start_time.tv_sec",
 				"font": "draw",
 				"textAlign": "end",
 				"autoSize": true,
@@ -45393,7 +45393,7 @@
 				"color": "light-violet",
 				"size": "xl",
 				"w": 739.2019178135888,
-				"text": "start_sim.tv_sec",
+				"text": "start_time.tv_sec",
 				"font": "draw",
 				"textAlign": "end",
 				"autoSize": true,
@@ -45664,7 +45664,7 @@
 				"color": "yellow",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 137.68525184472674,
 					"y": -22.921493020417984
 				},
@@ -45672,7 +45672,7 @@
 					"x": -240.18248153872446,
 					"y": -15.703726987572736
 				},
-				"arrowheadstart_sim": "arrow",
+				"arrowheadstart_time": "arrow",
 				"arrowheadEnd": "none",
 				"text": "",
 				"labelPosition": 0.5,
@@ -45745,7 +45745,7 @@
 				"color": "yellow",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 137.68525184472674,
 					"y": -22.921493020417984
 				},
@@ -45753,7 +45753,7 @@
 					"x": -240.18248153872446,
 					"y": -15.703726987572736
 				},
-				"arrowheadstart_sim": "arrow",
+				"arrowheadstart_time": "arrow",
 				"arrowheadEnd": "none",
 				"text": "",
 				"labelPosition": 0.5,
@@ -45826,7 +45826,7 @@
 				"color": "yellow",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 137.68525184472674,
 					"y": -22.921493020417984
 				},
@@ -45834,7 +45834,7 @@
 					"x": -240.18248153872446,
 					"y": -15.703726987572736
 				},
-				"arrowheadstart_sim": "arrow",
+				"arrowheadstart_time": "arrow",
 				"arrowheadEnd": "none",
 				"text": "",
 				"labelPosition": 0.5,
@@ -45907,7 +45907,7 @@
 				"color": "yellow",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 137.68525184472674,
 					"y": -22.921493020417984
 				},
@@ -45915,7 +45915,7 @@
 					"x": -240.18248153872446,
 					"y": -15.703726987572736
 				},
-				"arrowheadstart_sim": "arrow",
+				"arrowheadstart_time": "arrow",
 				"arrowheadEnd": "none",
 				"text": "",
 				"labelPosition": 0.5,
@@ -48947,7 +48947,7 @@
 				"color": "light-green",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 26.502819061279297,
 					"y": -155.05630493164062
 				},
@@ -48955,7 +48955,7 @@
 					"x": 33.610076904296875,
 					"y": 722.5750732421875
 				},
-				"arrowheadstart_sim": "arrow",
+				"arrowheadstart_time": "arrow",
 				"arrowheadEnd": "none",
 				"text": "",
 				"labelPosition": 0.5,
@@ -48979,7 +48979,7 @@
 					"x": 0.48672105339149574,
 					"y": 0.39867380901220195
 				},
-				"terminal": "start_sim"
+				"terminal": "start_time"
 			},
 			"typeName": "binding"
 		},
@@ -48999,7 +48999,7 @@
 				"color": "light-green",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -49007,7 +49007,7 @@
 					"x": 277.2434719757638,
 					"y": -424.21973501890176
 				},
-				"arrowheadstart_sim": "arrow",
+				"arrowheadstart_time": "arrow",
 				"arrowheadEnd": "none",
 				"text": "",
 				"labelPosition": 0.5,
@@ -49034,7 +49034,7 @@
 				"color": "light-green",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -49042,7 +49042,7 @@
 					"x": -251.04489301187868,
 					"y": -384.5954082854964
 				},
-				"arrowheadstart_sim": "arrow",
+				"arrowheadstart_time": "arrow",
 				"arrowheadEnd": "none",
 				"text": "",
 				"labelPosition": 0.5,
@@ -49069,7 +49069,7 @@
 				"color": "light-green",
 				"labelColor": "black",
 				"bend": 0,
-				"start_sim": {
+				"start_time": {
 					"x": -28.83575439453125,
 					"y": -375.70526123046875
 				},
@@ -49077,7 +49077,7 @@
 					"x": -250.84091186523438,
 					"y": -575.8193969726562
 				},
-				"arrowheadstart_sim": "arrow",
+				"arrowheadstart_time": "arrow",
 				"arrowheadEnd": "none",
 				"text": "",
 				"labelPosition": 0.5,
@@ -49104,7 +49104,7 @@
 				"color": "light-green",
 				"labelColor": "black",
 				"bend": -128.92374940269687,
-				"start_sim": {
+				"start_time": {
 					"x": 282.74192810058594,
 					"y": -198.26934814453125
 				},
@@ -49112,7 +49112,7 @@
 					"x": 277.01820373535156,
 					"y": -635.145263671875
 				},
-				"arrowheadstart_sim": "arrow",
+				"arrowheadstart_time": "arrow",
 				"arrowheadEnd": "none",
 				"text": "",
 				"labelPosition": 0.5,
@@ -49647,7 +49647,7 @@
 				"color": "violet",
 				"size": "xl",
 				"w": 656.7814012371108,
-				"text": "  start_sim;",
+				"text": "  start_time;",
 				"font": "draw",
 				"textAlign": "end",
 				"autoSize": true,
@@ -50872,7 +50872,7 @@
 				"color": "black",
 				"labelColor": "black",
 				"bend": 192.58675956300246,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 849.3149661261414
 				},
@@ -50880,7 +50880,7 @@
 					"x": 1885.52490234375,
 					"y": 843.1660719624124
 				},
-				"arrowheadstart_sim": "arrow",
+				"arrowheadstart_time": "arrow",
 				"arrowheadEnd": "none",
 				"text": "",
 				"labelPosition": 0.5,
@@ -50904,7 +50904,7 @@
 					"x": 0.26938414348404127,
 					"y": 0.6253310720828704
 				},
-				"terminal": "start_sim"
+				"terminal": "start_time"
 			},
 			"typeName": "binding"
 		},
@@ -50941,7 +50941,7 @@
 				"color": "black",
 				"labelColor": "black",
 				"bend": 402.3627745153781,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -50949,7 +50949,7 @@
 					"x": 2,
 					"y": 0
 				},
-				"arrowheadstart_sim": "arrow",
+				"arrowheadstart_time": "arrow",
 				"arrowheadEnd": "none",
 				"text": "",
 				"labelPosition": 0.5,
@@ -50973,7 +50973,7 @@
 					"x": 0.19120167294195278,
 					"y": 0.6635874715275291
 				},
-				"terminal": "start_sim"
+				"terminal": "start_time"
 			},
 			"typeName": "binding"
 		},
@@ -51010,7 +51010,7 @@
 				"color": "black",
 				"labelColor": "black",
 				"bend": 898.3984220194106,
-				"start_sim": {
+				"start_time": {
 					"x": 0,
 					"y": 0
 				},
@@ -51018,7 +51018,7 @@
 					"x": 2,
 					"y": 0
 				},
-				"arrowheadstart_sim": "arrow",
+				"arrowheadstart_time": "arrow",
 				"arrowheadEnd": "none",
 				"text": "",
 				"labelPosition": 0.5,
@@ -51042,7 +51042,7 @@
 					"x": 0.10118909857171196,
 					"y": 0.6615564247224183
 				},
-				"terminal": "start_sim"
+				"terminal": "start_time"
 			},
 			"typeName": "binding"
 		},

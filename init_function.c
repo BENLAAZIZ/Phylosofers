@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 11:53:39 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/26 16:17:11 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/27 14:46:44 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int	ft_init_mutex(t_data *data)
 	int	i;
 
 	i = 0;
+	data->full_data = 0;
+	data->is_died = 0;
 	data->philo = malloc(sizeof(t_philo) * data->philo_n);
 	if (!data->philo)
 		return (write(2, "Malloc error\n", 13), 1);
@@ -32,7 +34,7 @@ int	ft_init_mutex(t_data *data)
 		if (pthread_mutex_init(&data->forks[i], NULL))
 			return (write(2, "Mutex error\n", 12), 1);
 		i++;
-	}
+	} 
 	return (0);
 }
 
@@ -44,7 +46,7 @@ void	initializ_philo(t_data *data)
 	while (i < data->philo_n)
 	{
 		data->philo[i].philo_id = i + 1;
-		data->philo[i].nbr_meals_eat = 0;
+		data->philo[i].n_meal = 0;
 		data->philo[i].last_meal = 0;
 		data->philo[i].data = data;
 		data->philo[i].left_fork = i;

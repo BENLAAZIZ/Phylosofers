@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   outils.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
+/*   By: msassi <msassi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 20:13:04 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/26 11:55:16 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/27 15:52:44 by msassi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ int get_var(pthread_mutex_t *mutex, int *var)
 int set_var(pthread_mutex_t *mutex, int *var, int value)
 {
 	pthread_mutex_lock(mutex);
+	// printf("hhadadadaddad\nhhadadadaddad\nhhadadadaddad\nhhadadadaddad\nhhadadadaddad\nhhadadadaddad\n");	
 	*var = value;
 	pthread_mutex_unlock(mutex);
 	return (0);

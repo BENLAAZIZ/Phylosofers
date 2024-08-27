@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 19:16:47 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/26 15:33:05 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/27 10:45:28 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ char	*ft_strdup(const char *s1)
 	return (copy);
 }
 
-char	*ft_substr(char const *s, unsigned int start_sim, size_t len)
+char	*ft_substr(char const *s, unsigned int start_time, size_t len)
 {
 	size_t	s_len;
 	size_t	substr_len;
@@ -56,17 +56,17 @@ char	*ft_substr(char const *s, unsigned int start_sim, size_t len)
 	if (s == NULL)
 		return (NULL);
 	s_len = ft_strlen(s);
-	if (start_sim >= s_len)
+	if (start_time >= s_len)
 		return (ft_strdup(""));
 	substr_len = len;
-	if (start_sim + substr_len > s_len) 
-		substr_len = s_len - start_sim;
+	if (start_time + substr_len > s_len) 
+		substr_len = s_len - start_time;
 	substr = (char *)malloc((substr_len + 1) * sizeof(char));
 	if (substr == NULL)
 		return (NULL);
 	while (i < substr_len) 
 	{
-		substr[i] = s[start_sim + i];
+		substr[i] = s[start_time + i];
 		i++;
 	}
 	substr[substr_len] = '\0';
