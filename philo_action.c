@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 11:33:54 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/27 14:41:28 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/27 18:49:31 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ void	*routine(void *philo_data)
 			|| get_var(&philo->data->data_mutex, &philo->data->full_data))
 			break ;
 		ft_eat(philo);
+		if (philo->nbr_meals_eat == philo->data->number_limit_meals)
+			break ;
 		ft_sleep(philo);
 		ft_think(philo);
 	}
