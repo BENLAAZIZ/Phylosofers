@@ -6,13 +6,13 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 23:55:29 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/28 15:34:22 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/28 17:46:09 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-int simulation(t_data *data)
+int	simulation(t_data *data)
 {
 	int	i;
 
@@ -21,7 +21,8 @@ int simulation(t_data *data)
 	while (i < data->philo_n)
 	{
 		data->philo[i].last_meal = current_time();
-		if (pthread_create(&data->philo[i].philo_th, NULL, &routine, &data->philo[i]))
+		if (pthread_create(&data->philo[i].philo_th,
+				NULL, &routine, &data->philo[i]))
 			return (write(2, "Thread error\n", 13), 1);
 		i++;
 	}
@@ -34,10 +35,11 @@ int	creat_philo(t_data *data)
 	if (data->philo_n == 1)
 	{
 		data->start_time = current_time();
-		if (pthread_create(&data->philo[0].philo_th, NULL, &one_thread, &data->philo[0]))
+		if (pthread_create(&data->philo[0].philo_th, NULL,
+				&one_thread, &data->philo[0]))
 			return (write(2, "Thread error\n", 13), 1);
 		if (pthread_join(data->philo[0].philo_th, NULL))
-			return(1);
+			return (1);
 		return (destroy_simulation(data), 1);
 	}
 	if (simulation(data) == 1)

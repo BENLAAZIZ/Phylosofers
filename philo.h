@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 16:04:13 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/28 16:04:18 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/28 17:56:23 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ typedef struct s_data
 	t_philo			*philo;
 }	t_data;
 
-size_t	current_time();
+size_t	current_time(void);
 int		check_pars(t_data *data, char **argv);
 char	*ft_strtrim(char const *s1, char const *set);
 void	*routine(void *philo_data);
@@ -60,7 +60,7 @@ void	ft_sleep(t_philo *philo);
 void	ft_think(t_philo *philo);
 void	initializ_philo(t_data *data);
 int		ft_init_mutex(t_data *data);
-int		is_philo_died(t_philo *philo);
+int		is_philo_dead(t_philo *philo);
 int		philo_full(t_data *data);
 void	monitor(t_data *data);
 int		get_var(pthread_mutex_t *mutex, int *var);
@@ -69,7 +69,5 @@ void	ft_printf(t_philo *philo, char *string);
 int		ft_ptread_join(t_data *data);
 void	free_data(t_data *data);
 int		destroy_simulation(t_data *data);
-
-
 
 #endif

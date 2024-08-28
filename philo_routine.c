@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 15:20:53 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/28 15:23:34 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/28 19:03:22 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,25 +47,26 @@ void	*one_thread(void *philo_data)
 void	monitor(t_data *data)
 {
 	int	i;
-	
+
 	i = 0;
 	while (1)
 	{
-		if (is_philo_died(&data->philo[i]))
+		usleep(100);
+		pthread_mutex_lock(&data->data_mutex);
+		if (is_philo_dead(&data->philo[i]))
 		{
-			set_var(&data->data_mutex, &data->is_died, 1);
+			data->is_died = 1;
 			pthread_mutex_lock(&data->print_mutix);
-			if (get_var(&data->data_mutex, &data->is_died))
-				printf("%ld	%d	died\n", current_time()
+			printf("%ld	%d	died\n", current_time()
 					- data->start_time, data->philo[i].philo_id);
 			pthread_mutex_unlock(&data->print_mutix);
+			pthread_mutex_unlock(&data->data_mutex);
 			return ;
 		}
+		pthread_mutex_unlock(&data->data_mutex);
 		i++;
 		if (i == data->philo_n)
 			i = 0;
-		if (get_var(&data->data_mutex, &data->is_died))
-			break ;
 		if (philo_full(data))
 			break ;
 	}

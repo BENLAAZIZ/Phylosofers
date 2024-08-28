@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 19:16:47 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/27 10:45:28 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/28 17:48:29 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,12 +59,12 @@ char	*ft_substr(char const *s, unsigned int start_time, size_t len)
 	if (start_time >= s_len)
 		return (ft_strdup(""));
 	substr_len = len;
-	if (start_time + substr_len > s_len) 
+	if (start_time + substr_len > s_len)
 		substr_len = s_len - start_time;
 	substr = (char *)malloc((substr_len + 1) * sizeof(char));
 	if (substr == NULL)
 		return (NULL);
-	while (i < substr_len) 
+	while (i < substr_len)
 	{
 		substr[i] = s[start_time + i];
 		i++;
@@ -79,13 +79,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	len_s1;
 	size_t	j;
 
-	if (s1 == NULL) 
+	if (s1 == NULL)
 		return (NULL);
 	if (set == NULL)
 		return (ft_strdup(s1));
 	len_s1 = ft_strlen(s1);
 	i = 0;
-	while (s1[i] &&  (s1[i] == ' '))
+	while (s1[i] && (s1[i] == ' '))
 		i++;
 	if (i == len_s1)
 		return (ft_strdup(""));
