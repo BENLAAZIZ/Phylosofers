@@ -60,7 +60,7 @@ void	monitor(t_data *data);
 int		get_var(pthread_mutex_t *mutex, int *var);
 int		set_var(pthread_mutex_t *mutex, int *var, int value);
 void	free_data(t_data *data);
-int		end_simulation(t_data *data);
+int		destroy_simulation(t_data *data);
 void	ft_printf(t_philo *philo, char *string);
 
 

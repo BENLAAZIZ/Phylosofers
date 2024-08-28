@@ -6,7 +6,7 @@ CFLAGS = -Wall -Wextra -Werror #-fsanitize=thread
 
 RM = rm -f
 
-SRC =  philo.c parse.c strtim.c outils.c free_function.c init_function.c philo_action.c simulation.c
+SRC =  philo.c parse.c strtim.c outils.c free_function.c init_function.c philo_action.c philo_routine.c
 
 OBJ = $(SRC:.c=.o)
 
