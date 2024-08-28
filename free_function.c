@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 11:50:17 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/28 15:25:44 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/28 16:10:36 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,13 @@ void	free_data(t_data *data)
 		pthread_mutex_destroy(&data->forks[i]);
 		i++;
 	}
-	if (data->philo)    
+	if (data->philo)
 		free(data->philo);
 	if (data->forks)
 		free(data->forks);
 }
 
-int	destroy_simulation(t_data *data) // destroy mutex 
+int	destroy_simulation(t_data *data)
 {
 	int	i;
 
@@ -50,4 +50,3 @@ int	destroy_simulation(t_data *data) // destroy mutex
 		free(data->forks);
 	return (0);
 }
-

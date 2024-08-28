@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 00:58:32 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/27 12:07:28 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/28 16:13:16 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ int	check_sin(const char *str, int *i)
 	return (0);
 }
 
-int ft_isdigit(char *str)
+int	ft_isdigit(char *str)
 {
-	int i;
+	int	i;
 
 	if (!str)
 		return (0);
@@ -43,10 +43,10 @@ int ft_isdigit(char *str)
 	return (0);
 }
 
-int	ft_atoi(const char *str)
+long	ft_atoi(const char *str)
 {
 	int		i;
-	int		f;
+	long	f;
 	char	*array;
 
 	i = 0;
@@ -59,7 +59,7 @@ int	ft_atoi(const char *str)
 	if (ft_isdigit(array + i) == -1)
 		return (free(array), -1);
 	while (array[i] >= '0' && array[i] <= '9')
-	{	
+	{
 		f = (f * 10) + array[i] - '0';
 		if (f > 2147483647)
 			return (free(array), -1);

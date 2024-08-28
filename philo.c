@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 23:55:29 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/28 15:31:36 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/28 15:34:22 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int	creat_philo(t_data *data)
 	return (0);
 }
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	t_data	data;
 
@@ -60,13 +60,8 @@ int main(int argc, char **argv)
 		return (1);
 	if (creat_philo(&data) == 1)
 		return (0);
-	int	i = 0;
-	while (i < data.philo_n)
-	{
-		if (pthread_join(data.philo[i].philo_th, NULL))
-			return (write(2, "Thread error\n", 13), 1);
-		i++;
-	}
+	if (ft_ptread_join(&data) == 1)
+		return (1);
 	if (destroy_simulation(&data))
 		return (1);
 	return (0);

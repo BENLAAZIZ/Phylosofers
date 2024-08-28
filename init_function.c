@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 11:53:39 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/27 14:46:44 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/28 16:11:02 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	ft_init_mutex(t_data *data)
 		if (pthread_mutex_init(&data->forks[i], NULL))
 			return (write(2, "Mutex error\n", 12), 1);
 		i++;
-	} 
+	}
 	return (0);
 }
 
@@ -53,4 +53,18 @@ void	initializ_philo(t_data *data)
 		data->philo[i].right_fork = (i + 1) % data->philo_n;
 		i++;
 	}
+}
+
+int	ft_ptread_join(t_data *data)
+{
+	int	i;
+
+	i = 0;
+	while (i < data->philo_n)
+	{
+		if (pthread_join(data->philo[i].philo_th, NULL))
+			return (write(2, "Thread error\n", 13), 1);
+		i++;
+	}
+	return (0);
 }

@@ -6,13 +6,13 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 20:13:04 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/28 15:29:07 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/28 16:12:35 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-size_t	current_time()
+size_t	current_time(void)
 {
 	struct timeval	t;
 
@@ -35,7 +35,7 @@ void	ft_usleep(int time, t_data *data)
 	}
 }
 
-int get_var(pthread_mutex_t *mutex, int *var)
+int	get_var(pthread_mutex_t *mutex, int *var)
 {
 	int	ret;
 
@@ -45,7 +45,7 @@ int get_var(pthread_mutex_t *mutex, int *var)
 	return (ret);
 }
 
-int set_var(pthread_mutex_t *mutex, int *var, int value)
+int	set_var(pthread_mutex_t *mutex, int *var, int value)
 {
 	pthread_mutex_lock(mutex);
 	*var = value;
@@ -56,7 +56,8 @@ int set_var(pthread_mutex_t *mutex, int *var, int value)
 int	is_philo_died(t_philo *philo)
 {
 	pthread_mutex_lock(&philo->data->data_mutex);
-	if (current_time() - (size_t)philo->last_meal >= (size_t)philo->data->time_to_die)
+	if (current_time() - (size_t)philo->last_meal
+		>= (size_t)philo->data->time_to_die)
 	{
 		pthread_mutex_unlock(&philo->data->data_mutex);
 		return (1);
