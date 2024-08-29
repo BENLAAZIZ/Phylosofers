@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   philo_routine.c                                    :+:      :+:    :+:   */
+/*   routine.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/28 15:20:53 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/28 19:03:22 by hben-laz         ###   ########.fr       */
+/*   Created: 2024/08/29 12:33:46 by hben-laz          #+#    #+#             */
+/*   Updated: 2024/08/29 12:33:48 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,10 @@ void	*routine(void *philo_data)
 			|| get_var(&philo->data->data_mutex, &philo->data->full_data))
 			break ;
 		ft_eat(philo);
-		if (philo->nbr_meals_eat == philo->data->number_limit_meals)
+		if (philo->n_meal == philo->data->number_limit_meals)
 			break ;
 		ft_sleep(philo);
-		ft_think(philo);
+		ft_printf(philo, "is thinking\n");
 	}
 	return (NULL);
 }
@@ -58,16 +58,16 @@ void	monitor(t_data *data)
 			data->is_died = 1;
 			pthread_mutex_lock(&data->print_mutix);
 			printf("%ld	%d	died\n", current_time()
-					- data->start_time, data->philo[i].philo_id);
+				- data->start_time, data->philo[i].philo_id);
 			pthread_mutex_unlock(&data->print_mutix);
 			pthread_mutex_unlock(&data->data_mutex);
 			return ;
 		}
 		pthread_mutex_unlock(&data->data_mutex);
+		if (philo_full(data))
+			break ;
 		i++;
 		if (i == data->philo_n)
 			i = 0;
-		if (philo_full(data))
-			break ;
 	}
 }

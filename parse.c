@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 00:58:32 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/28 16:13:16 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/29 12:20:15 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,16 +72,16 @@ int	check_pars(t_data *data, char **argv)
 {
 	data->philo_n = ft_atoi(argv[1]);
 	if (data->philo_n <= 0)
-		return (write(2, "Invalid argument\n", 17), 1);
+		return (ft_error(1), 1);
 	data->time_to_die = ft_atoi(argv[2]);
 	if (data->time_to_die <= 0)
-		return (write(2, "Invalid argument\n", 17), 1);
+		return (ft_error(1), 1);
 	data->time_to_eat = ft_atoi(argv[3]);
 	if (data->time_to_eat <= 0)
-		return (write(2, "Invalid argument\n", 17), 1);
+		return (ft_error(1), 1);
 	data->time_to_sleep = ft_atoi(argv[4]);
 	if (data->time_to_sleep <= 0)
-		return (write(2, "Invalid argument\n", 17), 1);
+		return (ft_error(1), 1);
 	if (argv[5])
 	{
 		data->number_limit_meals = ft_atoi(argv[5]);

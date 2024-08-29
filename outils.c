@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 20:13:04 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/28 19:00:04 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/29 12:45:20 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	current_time(void)
 	struct timeval	t;
 
 	if (gettimeofday(&t, NULL) == -1)
-		return (write(2, "gettimeofday() error\n", 22), 0);
+		return (ft_error(5), 0);
 	return ((t.tv_sec * 1000) + (t.tv_usec / 1000));
 }
 
@@ -31,25 +31,11 @@ int	get_var(pthread_mutex_t *mutex, int *var)
 	return (ret);
 }
 
-int	set_var(pthread_mutex_t *mutex, int *var, int value)
-{
-	pthread_mutex_lock(mutex);
-	*var = value;
-	pthread_mutex_unlock(mutex);
-	return (0);
-}
-
 int	is_philo_dead(t_philo *philo)
 {
-	// pthread_mutex_lock(&philo->data->data_mutex);
-	// printf("last_meal = %ld\n", (size_t)philo->last_meal);
 	if (current_time() - (size_t)philo->last_meal
 		>= (size_t)philo->data->time_to_die)
-	{
-		// pthread_mutex_unlock(&philo->data->data_mutex);
 		return (1);
-	}
-	// pthread_mutex_unlock(&philo->data->data_mutex);
 	return (0);
 }
 
@@ -63,7 +49,7 @@ int	philo_full(t_data *data)
 	while (i < data->philo_n)
 	{
 		pthread_mutex_lock(&data->data_mutex);
-		if (data->philo[i].nbr_meals_eat < data->number_limit_meals)
+		if (data->philo[i].n_meal < data->number_limit_meals)
 		{
 			pthread_mutex_unlock(&data->data_mutex);
 			return (0);
@@ -71,6 +57,8 @@ int	philo_full(t_data *data)
 		pthread_mutex_unlock(&data->data_mutex);
 		i++;
 	}
-	set_var(&data->data_mutex, &data->full_data, 1);
+	pthread_mutex_lock(&data->data_mutex);
+	data->full_data = 1;
+	pthread_mutex_unlock(&data->data_mutex);
 	return (1);
 }
