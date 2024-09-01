@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 12:34:50 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/29 12:41:58 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/31 16:04:29 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,13 +34,13 @@ int	destroy_simulation(t_data *data, int flag)
 	i = -1;
 	if (flag == 1)
 	{
-		if (pthread_mutex_destroy(&data->print_mutix))
+		if (pthread_mutex_destroy(&data->print_mutix) != 0)
 			return (1);
-		if (pthread_mutex_destroy(&data->data_mutex))
+		if (pthread_mutex_destroy(&data->data_mutex) != 0)
 			return (1);
 		while (++i < data->philo_n)
 		{
-			if (pthread_mutex_destroy(&data->forks[i]))
+			if (pthread_mutex_destroy(&data->forks[i]) != 0)
 				return (1);
 		}
 	}

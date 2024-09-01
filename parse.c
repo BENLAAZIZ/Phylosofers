@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 00:58:32 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/29 12:20:15 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/31 15:17:03 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ int	check_pars(t_data *data, char **argv)
 	{
 		data->number_limit_meals = ft_atoi(argv[5]);
 		if (data->number_limit_meals < 0)
-			return (write(2, " Invalid number of meals\n", 25), 1);
+			return (write(2, "Error : Invalid number of meals\n", 25), 1);
 	}
 	else
 		data->number_limit_meals = -1;

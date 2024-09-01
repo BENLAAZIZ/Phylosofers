@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 12:36:38 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/29 15:46:32 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/31 14:43:49 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,14 +24,14 @@ int	ft_init_mutex(t_data *data)
 	data->forks = malloc(sizeof(pthread_mutex_t) * data->philo_n);
 	if (!data->forks)
 		return (ft_error(2), destroy_simulation(data, 0), 1);
-	if (pthread_mutex_init(&data->print_mutix, NULL))
+	if (pthread_mutex_init(&data->print_mutix, NULL) != 0)
 		return (ft_error(3), destroy_simulation(data, 0), 1);
-	if (pthread_mutex_init(&data->data_mutex, NULL))
+	if (pthread_mutex_init(&data->data_mutex, NULL) != 0)
 		return (ft_error(3), destroy_simulation(data, 1), 1);
 	i = 0;
 	while (i < data->philo_n)
 	{
-		if (pthread_mutex_init(&data->forks[i], NULL))
+		if (pthread_mutex_init(&data->forks[i], NULL) != 0)
 			return (ft_error(3), destroy_simulation(data, 1), 1);
 		i++;
 	}

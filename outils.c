@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 20:13:04 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/29 12:45:20 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/31 15:55:17 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 size_t	current_time(void)
 {
-	struct timeval	t;
+	struct timeval	time;
 
-	if (gettimeofday(&t, NULL) == -1)
+	if (gettimeofday(&time, NULL) == -1)
 		return (ft_error(5), 0);
-	return ((t.tv_sec * 1000) + (t.tv_usec / 1000));
+	return ((time.tv_sec * 1000) + (time.tv_usec / 1000));
 }
 
 int	get_var(pthread_mutex_t *mutex, int *var)

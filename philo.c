@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 23:55:29 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/08/29 12:50:56 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/08/31 16:36:29 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,11 @@ int	simulation(t_data *data)
 	int	i;
 
 	i = 0;
-	data->start_time = current_time();
 	while (i < data->philo_n)
 	{
 		data->philo[i].last_meal = current_time();
 		if (pthread_create(&data->philo[i].philo_th,
-				NULL, &routine, &data->philo[i]))
+				NULL, &routine, &data->philo[i]) != 0)
 			return (ft_error(4), 1);
 		i++;
 	}
@@ -32,13 +31,13 @@ int	simulation(t_data *data)
 int	creat_philo(t_data *data)
 {
 	initializ_philo(data);
+	data->start_time = current_time();
 	if (data->philo_n == 1)
 	{
-		data->start_time = current_time();
 		if (pthread_create(&data->philo[0].philo_th, NULL,
-				&one_thread, &data->philo[0]))
+				&one_thread, &data->philo[0]) != 0)
 			return (ft_error(4), destroy_simulation(data, 1), 1);
-		if (pthread_join(data->philo[0].philo_th, NULL))
+		if (pthread_join(data->philo[0].philo_th, NULL) != 0)
 			return (ft_error(4), destroy_simulation(data, 1), 1);
 		return (destroy_simulation(data, 1), 1);
 	}
@@ -53,7 +52,7 @@ int	main(int argc, char **argv)
 	t_data	data;
 
 	if (argc != 5 && argc != 6)
-		return (ft_error(2), 1);
+		return (ft_error(1), 1);
 	if (check_pars(&data, argv) == 1)
 		return (1);
 	if (data.number_limit_meals == 0)
