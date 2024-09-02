@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 12:33:46 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/09/01 15:50:04 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/09/02 16:37:42 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ void	*routine(void *philo_data)
 	t_philo	*philo;
 
 	philo = (t_philo *)philo_data;
-	// if (philo->philo_id % 2 == 0)
-	// 	ft_usleep(60, philo->data);
+	if (philo->philo_id % 2 == 0)
+		ft_usleep(60, philo->data);
 	while (1)
 	{
 		if (get_var(&philo->data->data_mutex, &philo->data->is_died)
@@ -51,7 +51,7 @@ void	monitor(t_data *data)
 	i = 0;
 	while (1)
 	{
-		usleep(100);
+		// usleep(100); // ./philo 2 200 100 100 
 		pthread_mutex_lock(&data->data_mutex);
 		if (is_philo_dead(&data->philo[i]))
 		{
