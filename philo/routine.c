@@ -6,7 +6,7 @@
 /*   By: hben-laz <hben-laz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 12:33:46 by hben-laz          #+#    #+#             */
-/*   Updated: 2024/09/03 10:32:36 by hben-laz         ###   ########.fr       */
+/*   Updated: 2024/09/05 16:29:19 by hben-laz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,6 @@ void	monitor(t_data *data)
 	i = 0;
 	while (1)
 	{
-		// usleep(60);
 		pthread_mutex_lock(&data->data_mutex);
 		if (is_philo_dead(&data->philo[i]))
 		{
